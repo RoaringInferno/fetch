@@ -2,7 +2,7 @@
 message(STATUS "Fetching curl ...")
 # Security: libpsl validates domain names to prevent spoofing attacks
 # RECOMMEND: ON (even for single API calls, as it provides basic security)
-set(CURL_USE_LIBPSL OFF)
+set(CURL_USE_LIBPSL ON)
 
 # Concurrency: libuv enables async I/O operations
 # RECOMMEND: OFF (you only make one request at a time)
